@@ -1,6 +1,10 @@
-﻿using System;
+﻿using Microsoft.Extensions.Hosting;
+using Serilog;
+using System;
 using System.Reflection;
+using System.ServiceProcess;
 using System.Threading;
+using WindowsServiceEDU.Logging;
 
 namespace WindowsServiceEDU
 {
@@ -15,7 +19,7 @@ namespace WindowsServiceEDU
 
         private static void Main()
         {
-            var serilogLogger = LogInitializer.CreateLogger(true);
+            var serilogLogger = LogInitializer.CreateLogger();
             Log.Logger = serilogLogger;
 
             Log.Information("{ApplicationName} start", ThisAssembly.AssemblyName);
@@ -25,7 +29,7 @@ namespace WindowsServiceEDU
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-            new OPCUADataLoggerService() // Your Service class here ...
+            new WindowsServiceEDU() // Your Service class here ...
             };
 
             if (Environment.UserInteractive)
