@@ -6,7 +6,7 @@ using System.Configuration.Install;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WindowsServiceEDU
+namespace WindowsServiceEDU.Net48
 {
     [RunInstaller(true)]
     public partial class ProjectInstaller : System.Configuration.Install.Installer
@@ -18,7 +18,6 @@ namespace WindowsServiceEDU
 
         private void serviceProcessInstaller1_AfterInstall(object sender, InstallEventArgs e)
         {
-
         }
     }
 }

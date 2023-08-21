@@ -1,4 +1,4 @@
-﻿namespace WindowsServiceEDU
+﻿namespace WindowsServiceEDU.Net48
 {
     partial class ProjectInstaller
     {

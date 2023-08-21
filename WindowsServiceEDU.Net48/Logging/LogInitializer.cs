@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Serilog;
 
-namespace WindowsServiceEDU.Logging
+namespace WindowsServiceEDU.Net48.Logging
 {
     public static class LogInitializer
     {

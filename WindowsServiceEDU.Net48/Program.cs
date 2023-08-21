@@ -1,12 +1,13 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Serilog;
 using System;
 using System.Reflection;
 using System.ServiceProcess;
 using System.Threading;
-using WindowsServiceEDU.Logging;
+using WindowsServiceEDU.Net48.Logging;
 
-namespace WindowsServiceEDU
+namespace WindowsServiceEDU.Net48
 {
     internal static class Program
     {
@@ -29,7 +30,8 @@ namespace WindowsServiceEDU
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-            new WindowsServiceEDU() // Your Service class here ...
+                // Your Service instance here ...
+                ActivatorUtilities.GetServiceOrCreateInstance<WindowsServiceEDU>(AppHost.Services)
             };
 
             if (Environment.UserInteractive)

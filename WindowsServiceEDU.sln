@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceEDU", "WindowsServiceEDU\WindowsServiceEDU.csproj", "{6B2BFAAB-717D-46E8-8FD7-E71EE01AFFCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsServiceEDU.Net48", "WindowsServiceEDU.Net48\WindowsServiceEDU.Net48.csproj", "{6B2BFAAB-717D-46E8-8FD7-E71EE01AFFCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceEDU.Net", "WindowsServiceEDU.Net\WindowsServiceEDU.Net.csproj", "{234ECE6A-E64A-450E-8F7E-E2438AB28591}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6B2BFAAB-717D-46E8-8FD7-E71EE01AFFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B2BFAAB-717D-46E8-8FD7-E71EE01AFFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B2BFAAB-717D-46E8-8FD7-E71EE01AFFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{234ECE6A-E64A-450E-8F7E-E2438AB28591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{234ECE6A-E64A-450E-8F7E-E2438AB28591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{234ECE6A-E64A-450E-8F7E-E2438AB28591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{234ECE6A-E64A-450E-8F7E-E2438AB28591}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
